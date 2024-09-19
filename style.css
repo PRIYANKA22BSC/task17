@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  button{
+    cursor: pointer;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 12vmin;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px gray;
+    padding: 0px 3vmin;
+  }
+  
+  #logo {
+    flex: 1;
+    margin-left: 3vmin;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  #menu ul {
+    list-style: none;
+    display: flex;
+    gap: 3vmin;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #menu ul li a {
+    text-decoration: none;
+    color: #213454;
+  }
+  
+  #logo img {
+    height: 10vmin;
+  }
+  
+  #user {
+    margin: 1vmin 3.8vmin;
+    height: 8vmin;
+    width: 8vmin;
+    border-radius: 50%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #user img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 3.2vmin;
+    padding: 3.5vmin;
+    color: rgb(12, 12, 12);
+    font-weight: 500;
+  }
+  /* Laundry service Section css start */
+  
+  .serviceContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 5vmin 10vmin;
+  }
+  
+  .serviceContainer .leftBox {
+    box-shadow: 0 0px 5px gray;
+    border-radius: 10px;
+    padding: 3vmin;
+    width: 48%;
+  }
+  .serviceContainer .rightBox {
+    width: 48%;
+  }
+  
+  .serviceInfoTitle {
+    min-height: 10vmin;
+  }
+  
+  .serviceInfoTitle h2 {
+    font-size: 6vmin;
+  }
+  
+  .serviceInfoTitle p {
+    font-size: 2.5vmin;
+  }
+  
+  .servicesBox{
+    display: grid;
+    align-items: center;
+    gap: 2vmin;
+    margin: 5vmin;
+  }
+  
+  .serivicesImg{
+    max-width: 100%;
+  }
+  
+  .serivicesImg img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+    border-radius: 30px;
+    box-shadow: gray 0 2px 5px;
+  }
+  
+  .serviceInfo{
+    display: flex;
+    align-items: center;
+    margin: 2vmin;
+    justify-content: space-between;
+    font-size: 4vmin;
+  }
+  
+  .ServiceButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .ServiceButton button{
+    height: 6vmin;
+    width: 25vmin;
+   color: #fff;
+   font-weight: 600;
+    border-radius: 25px;
+    border: none;
+    font-size: 3vmin;
+  }
+  
+  .ServiceButton .skip{
+    background-color: #ff7477;
+  }
+  
+  .ServiceButton .addItem{
+    background-color: #25a244;
+  }
+  
+  
+  .noItem{
+    margin: 3vmin;
+    font-size: 3vmin;
+  }
+  
+  /* right box */
+  
+  .rightUpperBox {
+    width: 100%;
+    height: 50vmin;
+    box-shadow: 0 0 5px gray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .addedItemHeading {
+    justify-content: center;
+    font-size: 5vmin;
+    font-weight: 600;
+    height: 10vmin;
+    display: flex;
+    align-items: center;
+  }
+  
+  .addedItemList {
+    height: 40vmin;
+  }
+  
+  .amountInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 3vmin;
+    height: 5vmin;
+  }
+  
+  .table {
+    width: 100%;
+    height: 30vmin;
+    overflow: scroll;
+    border-radius: 10px;
+  }
+  
+  .table::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #addedItemTable {
+    width: 100%;
+  }
+  
+  .table tr {
+    height: 6vmin;
+    box-shadow: 0 0.5px 0.5px gray;
+  }
+  
+  .table tr td {
+    text-align: center;
+  }
+  
+  .rightLowerBox {
+    width: 100%;
+    box-shadow: 0 0 5px gray;
+    border-radius: 10px;
+  }
+  
+  form {
+    display: grid;
+    gap: 3vmin;
+    padding: 15px;
+  }
+  
+  .lowerRightName {
+    font-size: 5vmin;
+    margin: auto;
+  }
+  
+  .inputName {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  input {
+    height: 6vmin;
+    border-radius: 10px;
+    width: 95%;
+    box-shadow: 0 0px 5px gray;
+    border: none;
+    padding-left: 3vmin ;
+    font-size: 2.5vmin;
+  }
+  
+  .userInfo {
+    display: flex;
+    gap: 2vmin;
+    width: 98%;
+    align-items: center;
+  }
+  
+  .inputPhone,
+  .inputEmail {
+    min-width: 50%;
+  }
+  
+  .submit {
+    height: 7vmin;
+    width: 45vmin;
+    font-size: 3vmin;
+    background-color: rgb(83, 177, 236);
+    color: #fff;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor:pointer;
+
+  }
+  
+  /* Laundry service Section css end */

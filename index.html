@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Task 17</title>
+  </head>
+  <body>
+    <nav>
+      <div id="logo"><img src="https://i.pinimg.com/236x/d5/0e/87/d50e87e932a44d11f54cde36d07d4e78.jpg"></div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <div id="menu" class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div id="user"><img src="E:\WebDev\.vscode\Upskillmafia\task17\profilepic.png" class="profilePic" /></div>
+    </nav>
+    <section class="serviceSection">
+      <div class="serviceContainer">
+        <div class="rightBox">
+          <div class="rightUpperBox">
+            <div class="addedItemHeading">
+            Added Items</div>
+            <div class="addedItemList">
+              <div class="table">
+                <table id="addedItemTable">
+                  <thead>
+                    <tr>
+                      <th>S.No</th>
+                      <th>Service Name</th>
+                      <th>Service Price</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+              <div class="amountInfo">
+                <div class="totalAmountName">Total Amount:</div>
+                <div id="totalAmountValue">₹0.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="rightLowerBox">
+            <form action="">
+              <h2 class="lowerRightName">Book Now</h2>
+              <div class="inputName input">
+                <h3>Name</h3>
+                <input type="text" class="inputUserDetails userName" required />
+              </div>
+              <div class="userInfo">
+                <div class="inputEmail input">
+                  <h3>Email</h3>
+                  <input
+                    type="email"
+                    class="inputUserDetails userOtherInfo email"
+                    required
+                    
+                  />
+                </div>
+                <div class="inputPhone input">
+                  <h3>Phone no</h3>
+                  <input
+                    type="number"
+                    class="inputUserDetails userOtherInfo phoneNo"
+                    required
+                  />
+                </div>
+              </div>
+              <button class="submit">Book Now</button>
+            </form>
+          </div>
+        </div>
+        <div class="leftBox">
+          <div class="serviceInfoTitle">
+            <h2>Our Services</h2>
+            <p>
+              Click on the add to cart button to add the services to your cart
+            </p>
+          </div>
+          <div class="servicesBox">
+            <div class="serivicesImg">
+              <img
+                src="Dry-Cleaning.png"
+                alt=""
+                class="servicimg"
+                id="servicimg"
+                height="200px"
+              />
+            </div>
+            <div class="serviceInfo">
+              <div class="serviceName">Dry cleaning</div>
+              <div class="servicePrice">₹200.00</div>
+            </div>
+            <div class="ServiceButton">
+              <button class="skip" id="skip">Skip</button>
+              <button class="addItem" id="addItem">Add Item</button>
+            </div>
+          </div>
+          <div class="InstructionForCart">
+            <i class="fa-solid fa-circle-info"></i> Add the items to cart and
+            book now
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="index.js"></script>
+</html>
